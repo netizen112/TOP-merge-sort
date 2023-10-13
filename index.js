@@ -1,12 +1,10 @@
 function merge(arr1, arr2) {
     let newArray = [];
     let status = true;
-    let i1 = 0,
-        i2 = 0;
     while (status) {
         if (arr1.length || arr2.length) {
             if (arr1.length && arr2.length) {
-                if (arr1[i1] <= arr2[i2]) {
+                if (arr1[0] <= arr2[0]) {
                     newArray.push(arr1.shift());
                 } else {
                     newArray.push(arr2.shift());
