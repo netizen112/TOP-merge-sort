@@ -26,12 +26,6 @@ function merge(arr1, arr2) {
 function mergeSort(arr) {
     if (arr.length <= 1) {
         return [...arr];
-    } else if (arr.length == 2){
-        if (arr[0] < arr[1]){
-            return [...arr]
-        } else {
-            return [arr[1], arr[0]]
-        }
     } else {
         const leftLength = Math.floor(arr.length / 2);
         let leftArray = arr.splice(0, leftLength);
